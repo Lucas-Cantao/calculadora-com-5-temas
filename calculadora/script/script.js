@@ -37,7 +37,7 @@ function abrir(){
     let themes = document.querySelector(".themes")
     themes.style.display= 'flex'
     let footer = document.querySelector(".footer")
-    footer.style.scale = '0'
+    footer.style.display = 'none'
 }
 
 
