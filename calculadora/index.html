@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css" id="link">
+</head>
+<body>
+    <div class="center">
+        <div class="themes">
+            <div class="temas" id="blue">blue</div>
+            <div class="temas" id="red">red</div>
+            <div class="temas" id="green">green</div>
+            <div class="temas" id="pink">pink</div>
+            <div class="temas" id="purple">purple</div>
+
+        </div>
+        <div class="calculadora">
+            <p class="p">calculadora</p>
+            <div class="row">
+                <input type="text" disabled="" id="input">
+                <table>
+                    <tr>
+                        <td><button onclick="clean()">CA</button></td>
+                        <td><button onclick="comeBack()">-></button></td>
+                        <td><button onclick="adicionar('/')">/</button></td>
+                        <td><button onclick="adicionar('*')">*</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="adicionar('9')">9</button></td>
+                        <td><button onclick="adicionar('8')">8</button></td>
+                        <td><button onclick="adicionar('7')">7</button></td>
+                        <td><button onclick="adicionar('-')">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="adicionar('6')">6</button></td>
+                        <td><button onclick="adicionar('5')">5</button></td>
+                        <td><button onclick="adicionar('4')">4</button></td>
+                        <td><button onclick="adicionar('+')">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="adicionar('3')">3</button></td>
+                        <td><button onclick="adicionar('2')">2</button></td>
+                        <td><button onclick="adicionar('1')">1</button></td>
+                        <td rowspan="2"><button onclick="equal()" id="equal">=</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="adicionar('0')">0</button></td>
+                        <td><button onclick="adicionar('.')">°</button></td>
+                        <td><button onclick="beforeAcount()">↻</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="alert">
+            <div class="box">
+                O limite de caractéres foi atingido, o máximo de caractéres é 32 <br>
+                <span class="back">voltar</span>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
