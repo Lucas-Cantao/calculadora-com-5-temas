@@ -20,6 +20,31 @@ function voltar(){
 
 
 
+function aviso(){
+    let calc = document.querySelector(".calculadora")
+    calc.style.display = 'none'
+    let themes = document.querySelector(".themes")
+    themes.style.display= 'none'
+}
+
+let firstAlert = document.querySelector(".open")
+firstAlert.addEventListener("click", abrir)
+
+
+function abrir(){
+    let calc = document.querySelector(".calculadora")
+    calc.style.display = 'block'
+    let themes = document.querySelector(".themes")
+    themes.style.display= 'flex'
+    let footer = document.querySelector(".footer")
+    footer.style.scale = '0'
+}
+
+
+
+
+
+
 
 
 let blue = document.querySelector("#blue")

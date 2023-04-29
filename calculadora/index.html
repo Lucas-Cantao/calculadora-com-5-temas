@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="style/calculadora-icon.png" type="image/x-icon">
     <link rel="stylesheet" href="style/style.css" id="link">
 </head>
-<body>
+<body onload="aviso()">
     <div class="center">
         <div class="themes">
             <div class="temas" id="blue">blue</div>
@@ -57,13 +57,18 @@
         </div>
         <div class="alert">
             <div class="box">
-                O limite de caractéres foi atingido, o máximo de caractéres é 32 <br>
+                O limite de caracteres foi atingido, o máximo de caractéres é 32 <br>
                 <span class="back">voltar</span>
             </div>
-            
         </div>
     </div>
-
+    <div class="footer">
+        <div class="box">
+            o limíte de caracteres é de 32, caso exceda esse limíte, 
+            irá aparecer um alerta na tela e sua conta será apagada
+            <span class="open">Ok</span>
+        </div>
+    </div>
     <script src="script/script.js"></script>
 </body>
 </html>
