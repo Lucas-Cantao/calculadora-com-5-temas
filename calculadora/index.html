@@ -54,10 +54,11 @@
                     </tr>
                 </table>
             </div>
+            <div id="mostrarHistorico"><input type="button" value="histórico de contas" id="historico" onclick="showHistorico()"></div>
         </div>
         <div class="alert">
             <div class="box">
-                O limite de caracteres foi atingido, o máximo de caractéres é 32 <br>
+                O limite de caracteres foi atingido, o máximo de caractéres é 32
                 <span class="back">voltar</span>
             </div>
         </div>
@@ -67,6 +68,12 @@
             o limíte de caracteres é de 32, caso exceda esse limíte, 
             irá aparecer um alerta na tela e sua conta será apagada
             <span class="open">Ok</span>
+        </div>
+    </div>
+    <div class="historico">
+        <span onclick="fecha()">voltar</span>
+        <div class="tabela">
+            <div class="conta"><p>ordem</p><p>conta</p></div>
         </div>
     </div>
     <script src="script/script.js"></script>

@@ -52,7 +52,7 @@ let red = document.querySelector("#red")
 let green = document.querySelector("#green")
 let pink = document.querySelector("#pink")
 let purple = document.querySelector("#purple")
-let body = document.getElementsByTagName("body")
+let naosei = document.getElementsByTagName("body")
 let link = document.querySelector("link[href='style/style.css']")
 let stlcss = new URL("style/style.css", window.location)
 
@@ -118,22 +118,56 @@ function comeBack(){
 }
 
 
-
 let array = [""]
+let historico = []
+
+
+function inputInfinity(){
+    input.value = ""
+}
+
 
 function equal(){
     if(input.value.length === 0){
         alert("please, make an acount")
     }else{
         array[0] = input.value
-        input.value = eval(input.value)  
+        historico.push(input.value)
+        input.value = eval(input.value)
+        if(input.value == Infinity){
+            setTimeout(inputInfinity, 3000)
+        }
     }
     
 }
 
 
-
 function beforeAcount(){
     input.value = array[0]
     array[0] = ""
+}
+
+function hist(conta, indice){
+    let tabela = document.querySelector(".tabela")
+    tabela.innerHTML += `<div class="conta"><p>${indice+1}°</p><p>${conta}</p></div>`
+}
+
+function showHistorico(){
+    let calc = document.querySelector(".calculadora")
+    let mostrar = document.querySelector(".historico")
+    let themes = document.querySelector(".themes")
+    calc.style.display = "none"
+    themes.style.display = "none"
+    mostrar.classList.add("historicoShow")
+    historico.forEach(hist)
+}
+
+
+function fecha(){
+    let calc = document.querySelector(".calculadora")
+    let mostrar = document.querySelector(".historico")
+    let themes = document.querySelector(".themes")
+    themes.style.display = 'flex'
+    calc.style.display = 'block'
+    mostrar.classList.remove("historicoShow")
 }
