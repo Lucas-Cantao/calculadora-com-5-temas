@@ -6,4 +6,8 @@ Como descrição detalhada sobre a calculadora posso dizer que ela tem como prin
 
 Essa calculadora conta com cinco temas diferentes, sendo eles, azul, vermelho, verde, rosa e roxo.
 
+UPDATE:
+
+No novo update, adicionei um botão específico para ver o histórico de contas, ele mostra todas as contas que você fez, porém, se você atualizar a apágina esse hitórico é perdido, pelo fato de eu ter usado apenas HTML, CSS e JS.
+
 link: https://lucas-cantao.github.io/calculadora-com-5-temas/calculadora
