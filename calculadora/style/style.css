@@ -272,6 +272,7 @@ span{
 .historicoShow{
     display: flex;
     scale: 1;
+    flex-direction: column-reverse;
     animation: mostra .5s linear;
 }
 @keyframes mostra{
