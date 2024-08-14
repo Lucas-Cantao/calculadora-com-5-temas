@@ -99,6 +99,7 @@ function adicionar(num){
         alerta.classList.remove('hidden')
         alerta.classList.add('show')
         calc.style.display = 'none'
+        tabela.innerHTML = '';
         themes.style.display = 'none'
         input.value = ""
     }
